@@ -32,7 +32,7 @@ class Navigation extends React.Component {
           <Navbar.Brand>
             <Nav.Link>
               <Link to="/">
-                <h6>Home</h6>
+                <h6>Share Azcárraga</h6>
               </Link>
             </Nav.Link>
           </Navbar.Brand>
@@ -42,21 +42,21 @@ class Navigation extends React.Component {
               <Nav.Item>
                 <Nav.Link>
                   <Link to="/about">
-                    <h6>About</h6>
+                    <h6>Get to know me</h6>
                   </Link>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link>
                   <Link to="/projects">
-                    <h6>Projects</h6>
+                    <h6>See my work</h6>
                   </Link>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link>
                   <Link to="/contact">
-                    <h6>Contact</h6>
+                    <h6>Let's talk</h6>
                   </Link>
                 </Nav.Link>
               </Nav.Item>
