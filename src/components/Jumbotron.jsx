@@ -7,7 +7,7 @@ const Styles = styled.div`
     .jumbo {
         background: url(${ireland}) no-repeat fixed bottom;
         background-size: cover;
-        height: 80vh;
+        height: 75vh;
         position: relative;
         z-index: -2;
     }
@@ -28,8 +28,8 @@ const Styles = styled.div`
     }
 
     .h1, h1, .p, p {
-      color: white;
-      text-shadow: 1px 1px #181818;
+      color: #181818;
+      //text-shadow: 1px 1px white;
     }
 
 `;
@@ -42,8 +42,9 @@ class Jumbotron extends React.Component {
           <div className="overlay"></div>
             <Container>
             <h1>Hi! I'm Share</h1>
+            <h1>I'm a Front-end developer</h1>
             <p>
-                I'm a Front-end developer who loves UX/UI design
+                I'm also a musician and dog behaviorist
             </p>
             </Container>
       </Jumbo>
