@@ -47,6 +47,7 @@ const Styles = styled.div`
     .footer {
         background-color: #222222;
         display: flex;
+        flex-direction: column;
         height: 30vh;
         align-items: center;
         justify-content: center;
@@ -58,11 +59,11 @@ const Styles = styled.div`
 
     }
 
-    h5 {
-        color:#bbb;
+    p {
+        color: #bbb;
     }
 
-    p {
+    h3 {
     color: #bbb;
 
     &:hover {
@@ -80,21 +81,21 @@ class Footer extends React.Component {
         return (
             <Styles>
                 <div className="footer">
-
+                    <div><p>Reach me on social media</p></div>
                     <div className="icons">
-                        <p>
+                        <h3>
                         <a href="https://www.linkedin.com/in/shareni-azcarraga/" target="_blank">
                             <FaLinkedinIn />
                         </a>
-                        </p>
+                        </h3>
 
                         <div className="middle" />
 
-                        <p>
+                        <h3>
                         <a href="https://github.com/shareazc" target="_blank">
                             <FaGithub />
                         </a>
-                        </p>
+                        </h3>
                     </div>
                 </div>
             </Styles>
