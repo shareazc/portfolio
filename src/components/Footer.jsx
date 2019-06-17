@@ -2,47 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-import github from "../assets/github.png";
-import linkedIn from "../assets/linkedin.png";
-
-/*
-const Styles = styled.div`
-    .footer {
-        background-color: #222;
-        display: flex;
-        height: 30vh;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .p {
-        color: #aaa;
-    }
-
-    .contactIcon {
-        max-width:20%;
-        max-height:20%;
-        display: block;
-        margin: auto;
-    }
-`;
-
-class Footer extends React.Component {
-    render () {
-        return (
-            <Styles>
-            <div className="footer"> 
-
-            <div><a href="https://github.com/shareazc" target="_blank"><img src={github} className="contactIcon" alt="github"/></a></div>
-            <div><a href="https://www.linkedin.com/in/shareni-azcarraga/" target="_blank"><img src={linkedIn} className="contactIcon" alt="linked in"/></a></div>
-
-            </div>
-            </Styles>
-        )
-    }
-}
-*/
-
 const Styles = styled.div`
     .footer {
         background-color: #222222;
@@ -84,7 +43,7 @@ class Footer extends React.Component {
                     <div><p>Reach me on social media</p></div>
                     <div className="icons">
                         <h3>
-                        <a href="https://www.linkedin.com/in/shareni-azcarraga/" target="_blank">
+                        <a href="https://www.linkedin.com/in/shareni-azcarraga/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedinIn />
                         </a>
                         </h3>
@@ -92,7 +51,7 @@ class Footer extends React.Component {
                         <div className="middle" />
 
                         <h3>
-                        <a href="https://github.com/shareazc" target="_blank">
+                        <a href="https://github.com/shareazc" target="_blank" rel="noopener noreferrer">
                             <FaGithub />
                         </a>
                         </h3>
