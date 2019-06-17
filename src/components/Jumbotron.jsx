@@ -1,11 +1,13 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
-import ireland from '../assets/ireland.jpg';
 import styled from "styled-components";
+
+//import ireland from '../assets/ireland.jpg';
+import dnd from "../assets/DnD-Cropped.jpg";
 
 const Styles = styled.div`
     .jumbo {
-        background: url(${ireland}) no-repeat fixed bottom;
+        background: url(${dnd}) no-repeat fixed bottom;
         background-size: cover;
         height: 75vh;
         position: relative;
