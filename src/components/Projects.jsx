@@ -8,10 +8,11 @@ import Button from "react-bootstrap/Button";
 
 const Styles = styled.div`
   .projectCard {
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
-    background-color: #f7f7f7;
-  }
+    background-color: #f1f1f1;
+  }                   #f7f7f7
 
   .thumbnail {
     max-width: 100%;
@@ -41,8 +42,8 @@ const Styles = styled.div`
 
 class Projects extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       projects: []
     }
@@ -73,19 +74,19 @@ class Projects extends React.Component {
       <Container>
         <Styles>
       <div className="Projects">
-        <h1>Some of my work here</h1><br />
+        <h1>See my work here</h1><br />
         {this.state.projects.map((project) => {
           return(
             <div className="projectCard">
-            <div className="content projectImage">
-              <img src={project.img} className="thumbnail" alt="" />
+              <div className="content projectImage">
+                <img src={project.img} className="thumbnail" alt="" />
+              </div>
+              <div className="content projectInfo">
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
+                <Button variant="link">Read More</Button>
+              </div>
             </div>
-            <div className="content projectInfo">
-              <h2>{project.name}</h2>
-              <p>{project.description}</p>
-              <Button variant="link">Read More</Button>
-            </div>
-          </div>
           )
         })}
       </div>
@@ -162,65 +163,4 @@ export default Projects;
               <Button variant="link">Read More</Button>
             </div>
           </div>
-*/
-
-//Unsuccessful attempt with React
-/* 
-class Projects extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      projects: [],
-      speed:10,
-    }
-  }
-
-  componentDidMount () {
-    const dBRef = firebase.database().ref();
-    const projectsRef = dBRef.child('projects');
-    projectsRef.on('value', snap => {
-      let portfolio = snap.val();
-      let newState = [];
-      for (let project in portfolio) {
-        newState.push({
-          id: project,
-          name: portfolio[project].name,
-          description: portfolio[project].description,
-          img: portfolio[project].img
-        })
-      }
-      this.setState({
-        projects: newState
-      })
-    })
-  }
-
-  render() {
-    return (
-      <Container>
-        <h2>Some of my work here</h2> <br />
-        <Styles>
-
-          {this.state.projects.map((project) => {
-            return (
-
-            <div>
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <p>{project.img}</p>
-            </div>
-          
-
-            );
-          })}
-          
-
-        </Styles>
-      </Container>
-    );
-  }
-}
-
-export default Projects;
 */
