@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "./Footer";
+//import Footer from "./Footer";
 import Container from "react-bootstrap/Container";
-import styled from "styled-components";
+//import styled from "styled-components";
 
-const Styles = styled.div``
+//const Styles = styled.div``
 
 class About extends React.Component {
     render () {
