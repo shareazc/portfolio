@@ -3,7 +3,7 @@ import firebase from "../firebase";
 import Container from "react-bootstrap/Container";
 import styled from "styled-components";
 import Button from "react-bootstrap/Button";
-//import LLogo from "../assets/LFavicon.png";
+
 
 
 const Styles = styled.div`
@@ -20,7 +20,7 @@ const Styles = styled.div`
   }
 
   .projectImage {
-    padding: 20px;
+    padding: 2rem;
   }
 
   .projectInfo {
@@ -36,6 +36,10 @@ const Styles = styled.div`
 
     .content {
       width: 100%;
+    }
+
+    .thumbnail {
+      max-width: 100%;
     }
   }
 `;
@@ -98,69 +102,3 @@ class Projects extends React.Component {
 }
 
 export default Projects;
-
-
-//Static Project divs
-/*
-  render() {
-    return (
-      <Container>
-        <h2>Some of my work here</h2> <br />
-        <Styles>
-
-          {this.state.projects.map}
-          <div className="projectCard">
-            <div className="content projectImage">
-              <img src={LLogo} className="thumbnail" alt="Organa" />
-            </div>
-            <div className="content projectInfo">
-              <h2>Organa</h2>
-              <p>Cool description</p>
-              <Button variant="link">Read More</Button>
-            </div>
-          </div><br/>
-
-          <div className="projectCard">
-            <div className="content projectImage">
-              <img src={LLogo} className="thumbnail" alt="Burger Queen" />
-            </div>
-            <div className="content projectInfo">
-              <h2>Burger Queen</h2>
-              <p>Cool description</p>
-              <Button variant="link">Read More</Button>
-            </div>
-          </div><br/>
-
-          <div className="projectCard">
-            <div className="content projectImage">
-              <img src={LLogo} className="thumbnail" alt="Pokedex Go" />
-            </div>
-            <div className="content projectInfo">
-              <h2>Pokédex Go!</h2>
-              <p>Cool description</p>
-              <Button variant="link">Read More</Button>
-            </div>
-          </div><br/>
-
-        </Styles>
-      </Container>
-    );
-  }
-}
-*/
-
-
-
-//Individual project card
-/*
-<div className="projectCard">
-            <div className="content projectImage">
-              <img src={project.img} className="thumbnail" alt="" />
-            </div>
-            <div className="content projectInfo">
-              <h2>{project.name}</h2>
-              <p>{project.descAription}</p>
-              <Button variant="link">Read More</Button>
-            </div>
-          </div>
-*/
