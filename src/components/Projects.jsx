@@ -91,7 +91,7 @@ class Projects extends React.Component {
                 <Button variant="link">Read More</Button>
               </div>
             </div>
-          )
+          ) 
         })}
       </div>
       </Styles>
