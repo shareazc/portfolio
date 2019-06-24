@@ -6,6 +6,9 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import NoMatch from "./components/NoMatch";
 import Navigation from './components/Navigation';
+import Organa from "./components/Organa";
+import Queen from "./components/Queen";
+import Pokedex from "./components/Pokedex";
 import './App.css';
 
 
@@ -19,6 +22,9 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
+          <Route path="/organa" component={Organa} />
+          <Route path="/queen" component={Queen} />
+          <Route path="/pokedex" component={Pokedex} />
           <Route component={NoMatch} />
         </Switch>
       </Router>

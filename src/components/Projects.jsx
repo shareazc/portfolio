@@ -1,5 +1,6 @@
 import React from "react";
 import firebase from "../firebase";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import styled from "styled-components";
 import Button from "react-bootstrap/Button";
@@ -64,7 +65,8 @@ class Projects extends React.Component {
           id: project,
           name: portProject[project].name,
           description: portProject[project].description,
-          img: portProject[project].img
+          img: portProject[project].img,
+          url: portProject[project].url
         })
       }
       this.setState({
@@ -88,7 +90,7 @@ class Projects extends React.Component {
               <div className="content projectInfo">
                 <h2>{project.name}</h2>
                 <p>{project.description}</p>
-                <Button variant="link">Read More</Button>
+                <Button variant="link"><Link to={project.url}>Read More</Link></Button>
               </div>
             </div>
           ) 
