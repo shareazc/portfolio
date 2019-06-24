@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { FaFlag } from "react-icons/fa";
+
 
 const Styles = styled.div`
   .navbar {
@@ -21,6 +23,12 @@ const Styles = styled.div`
 
   a {
     text-decoration: none;
+  }
+
+  svg {
+    color: #32cd32;
+  }
+
   }
 `;
 
@@ -55,8 +63,8 @@ class Navigation extends React.Component {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link>
-                  <Link to="/contact">
-                    <h6>Let's talk</h6>
+                  <Link to="/contact" className="hoverable">
+                    <h6>Currently available for hiring <FaFlag /></h6>
                   </Link>
                 </Nav.Link>
               </Nav.Item>
