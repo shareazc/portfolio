@@ -2,7 +2,7 @@
   "name": "share-azcarraga-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shareazc.github.io/portfolio",
+  "homepage": "https://shareazc.github.io/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "firebase": "^6.2.0",

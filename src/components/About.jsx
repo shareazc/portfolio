@@ -33,7 +33,7 @@ class About extends React.Component {
                 
                 <div className="portrait">
                     <h1>Super cool and awesome description about me</h1>
-                    <img className="self" src={self}></img>
+                    <img className="self" src={self} alt="portrait"/>
                 </div>
                 
                 <Container>
