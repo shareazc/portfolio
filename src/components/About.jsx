@@ -8,7 +8,7 @@ const Styles = styled.div`
     
 
     .self {
-        object-fit: scale-dow;
+        object-fit: scale-down;
         
     }
 
