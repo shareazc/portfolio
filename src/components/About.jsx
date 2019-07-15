@@ -8,13 +8,15 @@ const Styles = styled.div`
     
 
     .self {
+        background-color: black;
         object-fit: scale-down;
-        
+        float: right;
     }
 
     .portrait {
         display: flex;
         height: 90vh;
+        width: 100%;
         background-color: #f1f1f1;
         text-align:
     }
@@ -32,7 +34,7 @@ class About extends React.Component {
                 <Styles>
                 
                 <div className="portrait">
-                    <h1>Super cool and awesome description about me</h1>
+                    <h1>Super cool and<br/> awesome description <br/> about me</h1>
                     <img className="self" src={self} alt="portrait"/>
                 </div>
                 
