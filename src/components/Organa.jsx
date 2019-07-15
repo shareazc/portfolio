@@ -14,7 +14,6 @@ const Styles = styled.div`
   min-height: 90vh;
   padding-top: 10vh;
   padding-bottom:10vh;
-  align-content: center;
 
   & h1 {
     font-size: 10vh;

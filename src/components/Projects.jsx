@@ -25,7 +25,7 @@ const Styles = styled.div`
   }
 
   .projectInfo {
-    padding: 20px;
+    padding: 3rem;
     align-content: center;
     justify-content: center;
   }

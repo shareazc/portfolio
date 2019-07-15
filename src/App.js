@@ -7,8 +7,9 @@ import Contact from './components/Contact';
 import NoMatch from "./components/NoMatch";
 import Navigation from './components/Navigation';
 import Organa from "./components/Organa";
-import Queen from "./components/Queen";
-import Pokedex from "./components/Pokedex";
+import MobileGame from "./components/MobileGame";
+import TicTacToe from "./components/TicTacToe";
+import MdLinks from "./components/MdLinks";
 import './App.css';
 
 
@@ -23,8 +24,9 @@ function App() {
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
           <Route path="/organa" component={Organa} />
-          <Route path="/queen" component={Queen} />
-          <Route path="/pokedex" component={Pokedex} />
+          <Route path="/mobile" component={MobileGame} />
+          <Route path="/tic-tac-toe" component={TicTacToe} />
+          <Route path="/markdown" component={MdLinks} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
