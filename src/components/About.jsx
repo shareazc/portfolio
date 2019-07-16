@@ -2,22 +2,43 @@ import React from "react";
 import Footer from "./Footer";
 import Container from "react-bootstrap/Container";
 import self from "../assets/self.jpg";
+import CV from "../assets/CV-Share-Azcarraga.pdf";
 import styled from "styled-components";
+
+const emphasis = {
+  color: "#ef5350"
+}
 
 const Styles = styled.div`
 .self {
-    background-color: black;
+    display: inline;
     object-fit: scale-down;
-    float: right;
   }
+
+.selfQuote {
+  display: inline;
+  justify-content: center;
+  text-align: middle;
+}
+
+.h1, h1 {
+  display: inline;
+  color: white;
+  position: sticky;
+  left: 50%;
+}
 
 .portrait {
     width: 100%;
-    background-color: #f1f1f1;
-    padding: 3rem;
+    background-color: #222222;
+    margin-top: 3rem;
   }
 
 .intro {
+  font-size: 1.5rem;
+  -text-align: center;
+  padding: 2rem;
+  clear: left;
   }
 
 .collage {
@@ -35,8 +56,23 @@ const Styles = styled.div`
     }
 
     .self img {
-        background-color: #f1f1f1;
-        height: 25rem;
+        max-height: 25rem;
+        align-self: center;
+    }
+
+    .portrait {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .h1, h1 {
+      display: none;
+    }
+
+    .intro {
+      font-size: 1rem;
+      text-align: center;
+      padding: 2rem;
     }
   }
 `;
@@ -50,20 +86,20 @@ class About extends React.Component {
             <div className="self">
                 <img src={self} alt="portrait-picture" />
             </div>
+              <h1>Hello, I'm Share!</h1>
             </div>
 
             <div className="intro">
             <p>
-                I believe that the more we as developers help people to connect
-                through technology and provide human, comprehensive solutions, the
-                more we can inspire more people to take direct action towards
-                creating and supporting communities.
+                I believe that it is our responsability as developers to shine 
+                a new light on technology as a comprehensive and intuitive tool 
+                to solve the new problems we face every day.
             </p>
 
             <p>
-                I have a mix-matched background in music, psychology and as an
-                entrepreneur of my own business. I recently graduated from
-                Laboratoria: an intensive dev Bootcamp that empowers women and
+                I have a mix-matched background in <i style={emphasis}>music, psychology</i> and as an
+                <i style={emphasis}> entrepreneur</i> of my own business. I recently graduated from
+                <b style={emphasis}> Laboratoria</b>: an intensive 6-month long dev Bootcamp that empowers women and
                 helps them kickstart a career in the tech industry.
             </p>
 
@@ -72,7 +108,9 @@ class About extends React.Component {
                 two favorite things: food and hanging out.
             </p>
 
-            <p>I’m based in Guadalajara, MX</p>
+            <p>I’m based in Guadalajara, MX and you can download my resume 
+              <a href= {CV} download="Shareni-Azcarraga-resume" style={emphasis}> here.</a>
+              </p>
             </div>
 
           <div className="collage" />
