@@ -15,6 +15,7 @@ const Styles = styled.div`
   .h6,
   h6 {
     color: #bbb;
+    margin: 0;
 
     &:hover {
       color: white;
