@@ -133,10 +133,6 @@ a {
 
 @media only screen and (max-width:425px) {
 
-  p {
-    font-size: 0.9rem;
-  }
-
   .mockup {
     background: url(${mockupMob}) no-repeat;
     background-size: contain;

@@ -63,10 +63,8 @@ class Navigation extends React.Component {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link>
-                  <Link to="/contact" className="hoverable">
-                    <h6>Currently available for hiring <FaFlag /></h6>
-                  </Link>
+                <Nav.Link target="_blank" href="mailto:shareni.azcarraga@gmail.com?subject=I'd like to Hire you!">
+                  <h6>Currently available for hiring <FaFlag /></h6>
                 </Nav.Link>
               </Nav.Item>
             </Nav>
