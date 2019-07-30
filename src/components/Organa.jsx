@@ -165,7 +165,7 @@ a {
 }
 
 .prototype img {
-  height: 10rem;
+  max-height: 10rem;
 }
 
 .dashboard img {
