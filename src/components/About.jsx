@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./Footer";
 import Container from "react-bootstrap/Container";
 import self from "../assets/self.jpg";
+import collage from "../assets/collagePortfolio.jpg";
 import CV from "../assets/CV-Share-Azcarraga.pdf";
 import styled from "styled-components";
 
@@ -35,9 +36,24 @@ const Styles = styled.div`
   }
 
   .collage {
+    object-fit: contain;
+    width: 100%;
   }
 
   .quote {
+    padding: 2rem;
+    background-color: #f1f1f1;
+
+    p {
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #ef5350;
+    }
+
+    h5 {
+      margin-right: 0;
+      text-align: right;
+    }
   }
 
   .interests {
@@ -73,10 +89,12 @@ class About extends React.Component {
           </div>
 
           <div className="intro">
+            <Container>
             <p>
-              Hi, I'm Share. I believe that it is our responsability as
-              developers to shine a new light on technology as a comprehensive
-              and intuitive tool to solve the new problems we face every day.
+              Hi, I'm Share. I'm a front-end developer with a passion for good UI design
+              and UX research. I believe that it is our responsability as
+              developers to shine a new light on technology as a human-comprehensive
+              and intuitive tool to solve the new challenges we face everyday.
             </p>
 
             <p>
@@ -101,15 +119,26 @@ class About extends React.Component {
                 here.
               </a>
             </p>
+            </Container>
           </div>
 
-          <div className="collage" />
+            <img src={collage} className="collage" alt="collage"/>
 
-          <div className="quote" />
 
-          <div className="interests" />
+          <div className="quote">
+            <Container>
+            <p>“For me, I am driven by two main philosophies: know more today about the world than I knew yesterday and lessen the suffering of others. You'd be surprised how far that gets you.” </p>
+            <h5>― Neil deGrasse Tyson</h5>
+            </Container>
+          </div>
 
-          <Container />
+          <div className="interests">
+            <Container>
+              
+            </Container>
+          </div>
+
+          
         </Styles>
         <Footer />
       </React.Fragment>
