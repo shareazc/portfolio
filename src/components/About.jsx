@@ -56,9 +56,6 @@ const Styles = styled.div`
     }
   }
 
-  .interests {
-  }
-
   @media only screen and (max-width: 600px) {
     .self {
       float: none;
@@ -122,20 +119,21 @@ class About extends React.Component {
             </Container>
           </div>
 
-            <img src={collage} className="collage" alt="collage"/>
-
-
           <div className="quote">
             <Container>
-            <p>“For me, I am driven by two main philosophies: know more today about the world than I knew yesterday and lessen the suffering of others. You'd be surprised how far that gets you.” </p>
+            <p>“For me, I am driven by two main philosophies: know more today about 
+              the world than I knew yesterday and lessen the suffering of others. 
+              You'd be surprised how far that gets you.” </p>
             <h5>― Neil deGrasse Tyson</h5>
             </Container>
           </div>
 
+            <img src={collage} className="collage" alt="collage"/>
+
+
+
+
           <div className="interests">
-            <Container>
-              
-            </Container>
           </div>
 
           
