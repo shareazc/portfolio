@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTop from './ScrollToTop';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop>
         <Navigation />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -27,6 +29,7 @@ function App() {
           <Route path="/markdown" component={MdLinks} />
           <Route component={NoMatch} />
         </Switch>
+        </ScrollToTop>
       </Router>
     </div>
   );

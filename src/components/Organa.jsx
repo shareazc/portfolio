@@ -143,6 +143,12 @@ a {
   background-color: #f1f1f1;
 }
 
+@media only screen and (max-width: 768px) {
+  .prototype img {
+    max-height: 10rem;
+  }
+}
+
 @media only screen and (max-width:600px) {
 
   .mockup {
