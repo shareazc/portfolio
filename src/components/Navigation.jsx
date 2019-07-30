@@ -37,7 +37,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <Styles>
-        <Navbar variant="dark" expand="lg">
+        <Navbar variant="dark" expand="lg" autofocus>
           <Navbar.Brand>
             <Nav.Link>
               <Link to="/">

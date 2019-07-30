@@ -11,10 +11,6 @@ import dashbscreen from "../assets/organaDashbDemo.gif";
 import styled from "styled-components";
 
 const Styles = styled.div`
-p {
-  font-size: 1.2rem;
-}
-
 a {
   font-style: italic;
   color: #ef5350;
@@ -126,12 +122,28 @@ a {
   padding: 10vh 0 10vh 0;
 }
 
+.stacks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10vh;
+}
+
+.stacks div {
+  width: 50%;
+  padding: 0 5rem 0 5rem;
+  border-style: solid;
+  border-color: #f1f1f1;
+  border-width: 0.5rem;
+}
+
 .end {
   padding: 10vh 0 10vh 0;
   background-color: #f1f1f1;
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:600px) {
 
   .mockup {
     background: url(${mockupMob}) no-repeat;
@@ -277,7 +289,7 @@ class Organa extends React.Component {
                 each student it contained.
               </p>
 
-              <p>Knowing what had to change, I set design goals:</p>
+              <p>Knowing what had to change, I set simple goals:</p>
 
               <div className="uxUi">
                 <div>
@@ -370,13 +382,30 @@ class Organa extends React.Component {
             </Container>
           </div>
 
+          <div className="stacks">
+                    <div>
+                        <h2>Stacks</h2>
+
+                        <p>Adobe Xd</p>
+                        <p>Adobe Illustrator</p>
+                        <p>HTML5</p>
+                        <p>CSS3 + Styled Components</p>
+                        <p>Javascript</p>
+                        <p>Google Firebase</p>
+                        <p>React JS +  React Bootstrap</p>
+                    </div>
+                </div>
+
           <div className="end">
             <Container>
               <p>
                 <a href="https://github.com/shareazc/open-house-organa/blob/master/organa/README.md"
                   target="_blank">
-                  Check out this project and feel free to become a contributor on Github.
+                  Check out this project on Github.
                 </a>
+              </p>
+              <p>
+                You can see the hi-fi prototype here.
               </p>
             </Container>
           </div>

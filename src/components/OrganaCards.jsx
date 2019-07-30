@@ -28,7 +28,7 @@ const Styles = styled.div`
   justify-content: center;
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:600px) {
   .reqCard {
     display: block;
   }

@@ -30,7 +30,19 @@ const Styles = styled.div`
     justify-content: center;
   }
 
-  @media only screen and (max-width:425px) {
+  @media only screen and (max-width: 768px) {
+
+    .content {
+      width: 100%;
+    }
+
+    .thumbnail {
+      max-width: 100%;
+    }
+  }
+  }
+
+  @media only screen and (max-width:600px) {
     .projectCard {
       display: block;
     }
@@ -43,6 +55,8 @@ const Styles = styled.div`
       max-width: 100%;
     }
   }
+
+  
 `;
 
 class Projects extends React.Component {
