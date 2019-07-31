@@ -11,20 +11,17 @@ const emphasis = {
 };
 
 const Styles = styled.div`
-  .self {
-    display: inline;
-    object-fit: scale-down;
+  .about {
+    display: flex;
   }
 
-  .selfQuote {
-    display: inline;
-    justify-content: center;
-    text-align: middle;
+  .about img {
+    object-fit: contain;
+    max-width: 25%;
   }
 
   .portrait {
-    width: 100%;
-    background-color: #222222;
+    width: 40%;
     margin-top: 0;
     text-align: center;
   }
@@ -57,13 +54,15 @@ const Styles = styled.div`
   }
 
   @media only screen and (max-width: 600px) {
-    .self {
-      float: none;
+
+    .about {
+      flex-wrap: wrap;
     }
 
-    .self img {
+    .about img {
+      display: block;
       max-height: 25rem;
-      align-self: center;
+      margin: auto;
     }
 
     .intro {
@@ -79,44 +78,43 @@ class About extends React.Component {
     return (
       <React.Fragment>
         <Styles>
-          <div className="portrait">
-            <div className="self">
-              <img src={self} alt="" />
+          <div className="about">
+
+                <img src={self} alt="" />
+
+            <div className="intro">
+              <Container>
+              <p>
+                Hi, I'm Share. I'm a front-end developer with a passion for good UI design
+                and UX research. I believe that it is our responsability as
+                developers to shine a new light on technology as a human-comprehensive
+                and intuitive tool to solve the new challenges we face everyday.
+              </p>
+
+              <p>
+                I have a mix-matched background in{" "}
+                <i style={emphasis}>music, psychology</i> and as an
+                <i style={emphasis}> entrepreneur</i> of my own business. I
+                recently graduated from
+                <b style={emphasis}> Laboratoria</b>: an intensive 6-month long
+                dev Bootcamp that empowers women and helps them kickstart a career
+                in the tech industry.
+              </p>
+
+              <p>
+                Aside from that I also love barbeques because they put together my
+                two main favorite things: food and hanging out. 
+              </p>
+
+              <p>
+                I’m based in Guadalajara, MX and you can download my resume
+                <a href={CV} download="Shareni-Azcarraga-resume" style={emphasis}>
+                  {" "}
+                  here.
+                </a>
+              </p>
+              </Container>
             </div>
-          </div>
-
-          <div className="intro">
-            <Container>
-            <p>
-              Hi, I'm Share. I'm a front-end developer with a passion for good UI design
-              and UX research. I believe that it is our responsability as
-              developers to shine a new light on technology as a human-comprehensive
-              and intuitive tool to solve the new challenges we face everyday.
-            </p>
-
-            <p>
-              I have a mix-matched background in{" "}
-              <i style={emphasis}>music, psychology</i> and as an
-              <i style={emphasis}> entrepreneur</i> of my own business. I
-              recently graduated from
-              <b style={emphasis}> Laboratoria</b>: an intensive 6-month long
-              dev Bootcamp that empowers women and helps them kickstart a career
-              in the tech industry.
-            </p>
-
-            <p>
-              Aside from that I also love barbeques because they put together my
-              two favorite things: food and hanging out.
-            </p>
-
-            <p>
-              I’m based in Guadalajara, MX and you can download my resume
-              <a href={CV} download="Shareni-Azcarraga-resume" style={emphasis}>
-                {" "}
-                here.
-              </a>
-            </p>
-            </Container>
           </div>
 
           <div className="quote">

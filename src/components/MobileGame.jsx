@@ -51,6 +51,15 @@ a {
     }
 }
 
+.challenge {
+    padding: 10vh 0 10vh 0;
+    background-color: #f1f1f1;
+}
+
+.chicken {
+    padding: 10vh 0 10vh 0;
+}
+
 .stacks {
     display: flex;
     justify-content: center;
@@ -107,12 +116,23 @@ class MobileGame extends React.Component {
                             but I had played games developed on Unity and liked them, so I thought that was a 
                             good place to start as any and set to work. 
                         </p>
+                    </Container>
+                </div>
+
+                <div className="challenge">
+                    <Container>
+                        <h3>Learning a new language in a week</h3>
                         <p>
                             The biggest challenge I encountered with this project was that I didn't know Unity used <b style={emphasis}>C# </b>
                             as developing language and I only knew Javascript so it took me a bit to understand the new
                             syntax. I also learned that when you're developing a game and you program the movement to take 
                             input from the player it's a different thing to program input take from a keyboard than a touchscreen.
                         </p>
+                        </Container>
+                </div>
+
+                <div className="chicken">
+                    <Container>
                         <p>
                             The whole chicken-theme began as a joke. I was talking to my wife about all those predictions
                             of the end of the world and she said "We're all gonna die, well, probably not chickens but that's
@@ -120,6 +140,10 @@ class MobileGame extends React.Component {
                             Chickens are actually very smart! A lot of training behaviourists pay big money to train chickens,
                             their quickness help people develop their coordination and sensitivity, so yeah, chickens could
                             totally survive the apocalypse but because of how cool they are. 
+                        </p>
+                        <p>
+                            Also in spanish the word for small chicken is "pollito", so when it came down to choose a name
+                            for the game I just thought "pollito" + apocalypse = Apocallypse.
                         </p>
                     </Container>
                 </div>

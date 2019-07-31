@@ -10,6 +10,10 @@ import scanscreen from "../assets/organaScanDemo.gif";
 import dashbscreen from "../assets/organaDashbDemo.gif";
 import styled from "styled-components";
 
+const emphasis = {
+  color: "#ef5350"
+};
+
 const Styles = styled.div`
 a {
   font-style: italic;
@@ -122,12 +126,17 @@ a {
   padding: 10vh 0 10vh 0;
 }
 
+.features {
+  padding: 10vh 0 10vh 0;
+  background-color: #f1f1f1;
+}
+
 .stacks {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 10vh;
+  padding: 10vh 0 10vh 0;
 }
 
 .stacks div {
@@ -393,6 +402,22 @@ class Organa extends React.Component {
                 they don't need to be senior developers to create tools that 
                 help people.
               </p> 
+            </Container>
+          </div>
+
+          <div className="features">
+            <Container>
+              <h3>Technical features</h3>
+
+              <p>• Code validation:</p>
+              <p style={emphasis}>
+                Does not accept foreign/invalid/external codes.
+                Only takes assistance once per code scanned.
+              </p>
+              <p>• Updates the dashboard automatically as the codes are scanned</p>
+              <p>• Updates the date automatically</p>
+              <p>• Filters list of absentees</p>
+              <p>• Shows full student list</p>
             </Container>
           </div>
 
