@@ -147,6 +147,10 @@ a {
   .prototype img {
     max-height: 10rem;
   }
+
+  .dashboard img {
+    max-height: 10rem;
+  }
 }
 
 @media only screen and (max-width:600px) {
@@ -175,7 +179,11 @@ a {
 }
 
 .dashboard img {
-  height: 10rem;
+  max-height: 10rem;
+}
+
+.stacks div {
+  padding: 0;
 }
 
 `;
@@ -355,12 +363,12 @@ class Organa extends React.Component {
 
           <div className="prototype">
             <p><i>The scanner screen that all students would have access to.</i></p>
-            <img src={scanscreen}/>
+            <img src={scanscreen} alt="Screen showing the scanner"/>
           </div>
 
           <div className="dashboard">
             <p><i>Once logged in, this is the dashboard our client would see.</i></p>
-            <img src={dashbscreen} />
+            <img src={dashbscreen} alt="Dashboard screen for the client"/>
           </div>
 
           <div className="fifth">
@@ -392,26 +400,26 @@ class Organa extends React.Component {
                     <div>
                         <h2>Stacks</h2>
 
-                        <p>Adobe Xd</p>
-                        <p>Adobe Illustrator</p>
-                        <p>HTML5</p>
-                        <p>CSS3 + Styled Components</p>
-                        <p>Javascript</p>
-                        <p>Google Firebase</p>
-                        <p>React JS +  React Bootstrap</p>
+                        <p>• Adobe Xd</p>
+                        <p>• Adobe Illustrator</p>
+                        <p>• HTML5</p>
+                        <p>• CSS3 + Styled Components</p>
+                        <p>• Javascript</p>
+                        <p>• Google Firebase</p>
+                        <p>• React JS + React Bootstrap</p>
                     </div>
                 </div>
 
           <div className="end">
             <Container>
               <p>
-                <a href="https://github.com/shareazc/open-house-organa/blob/master/organa/README.md"
-                  target="_blank">
-                  Check out this project on Github.
+                
+                  Check out this project on <a href="https://github.com/shareazc/open-house-organa/blob/master/organa/README.md"
+                  target="_blank"  rel="noopener noreferrer"> Github.
                 </a>
               </p>
               <p>
-                You can see the hi-fi prototype here.
+                You can see the hi-fi prototype<a href="https://docs.google.com/presentation/d/1yj1rQCJIHzIW_Iaoxl154F97FI9OZlDVKBovKRIn2xo/edit?usp=sharing" target="_blank"  rel="noopener noreferrer"> here.</a>
               </p>
             </Container>
           </div>

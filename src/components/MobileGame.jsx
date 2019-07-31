@@ -96,40 +96,40 @@ class MobileGame extends React.Component {
                     </p>
                     <p>Also, you're a chicken.</p>
                 </div>
-                <img src="https://i.imgur.com/ywYYQLm.jpg" className="mockup"/>
+                <img src="https://i.imgur.com/ywYYQLm.jpg" alt="Mobile mockup of the game" className="mockup"/>
                 <div className="description">
                     <Container>
-                    <p>This project was born out of two of my dearest interest: videogames and animals.</p>
-                    <p>I had previously made a mobile game (See Tic-Tac-Toe Native) however
-                        I wasn't too thrilled with it, so I began researching how game development worked. 
-                        The amount of game engines that existed was intimidating so I decided to take step 
-                        one on known territory: <b style={emphasis}>Unity.</b>  I had neved used it before 
-                        but I had played games developed on Unity and liked them, so I thought that was a 
-                        good place to start as any and set to work. 
-                    </p>
-                    <p>
-                        The biggest challenge I encountered with this project was that I didn't know Unity used <b style={emphasis}>C# </b>
-                        as developing language and I only knew Javascript so it took me a bit to understand the new
-                        syntax. I also learned that when you're developing a game and you program the movement to take 
-                        input from the player it's a different thing to program input take from a keyboard than a touchscreen.
-                    </p>
-                    <p>
-                        The whole chicken-theme began as a joke. I was talking with my wife about all those predictions
-                        of the end of the world and she said "We're all gonna die, well, probably not chickens but that's
-                        because they're the devil incarnate." (She's really scared of birds) And I thought, you know what?
-                        Chickens are actually very smart! A lot of training behaviourists pay big money to train chickens,
-                        their quickness help people develop their coordination and sensitivity, so yeah, chickens could
-                        totally survive the apocalypse but because of how cool they are. 
-                    </p>
+                        <p>This project was born out of two of my dearest interest: videogames and animals.</p>
+                        <p>I had previously made a mobile game (See Tic-Tac-Toe Native) however
+                            I wasn't too thrilled with it, so I began researching how game development worked. 
+                            The amount of game engines that existed was intimidating so I decided to take step 
+                            one on known territory: <b style={emphasis}>Unity.</b>  I had neved used it before 
+                            but I had played games developed on Unity and liked them, so I thought that was a 
+                            good place to start as any and set to work. 
+                        </p>
+                        <p>
+                            The biggest challenge I encountered with this project was that I didn't know Unity used <b style={emphasis}>C# </b>
+                            as developing language and I only knew Javascript so it took me a bit to understand the new
+                            syntax. I also learned that when you're developing a game and you program the movement to take 
+                            input from the player it's a different thing to program input take from a keyboard than a touchscreen.
+                        </p>
+                        <p>
+                            The whole chicken-theme began as a joke. I was talking to my wife about all those predictions
+                            of the end of the world and she said "We're all gonna die, well, probably not chickens but that's
+                            because they're the devil incarnate." (She's really scared of birds) And I thought, you know what?
+                            Chickens are actually very smart! A lot of training behaviourists pay big money to train chickens,
+                            their quickness help people develop their coordination and sensitivity, so yeah, chickens could
+                            totally survive the apocalypse but because of how cool they are. 
+                        </p>
                     </Container>
                 </div>
 
                 <div className="stacks">
                     <div>
                         <h2>Stacks</h2>
-                        <p>Unity Game Engine</p>
-                        <p>C#</p>
-                        <p>Adobe Illustrator</p>
+                        <p>• Unity Game Engine</p>
+                        <p>• C#</p>
+                        <p>• Adobe Illustrator</p>
                     </div>
                 </div>
                 

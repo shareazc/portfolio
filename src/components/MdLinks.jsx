@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container"
+import MD1 from "../assets/MDLinks1.png";
+import MD2 from "../assets/MDLinks2.png";
 import Footer from "./Footer";
 
 const Styles = styled.div`
@@ -32,10 +34,25 @@ a {
         }
 } 
 
-.mockup{}
 
 .description{
     padding: 10vh 0 10vh 0;
+}
+
+.screenshot1 {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10vh 0 10vh 0;
+    display: block;
+    justify-content: center;
+}
+
+.screenshot2 {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10vh 0 10vh 0;
+    display: block;
+    justify-content: center;
 }
 
 .stacks {
@@ -43,11 +60,10 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 10vh;
+    padding: 10vh 0 10vh 0;
 }
 
 .stacks div {
-
     width: 50%;
     padding: 0 5rem 0 5rem;
     border-style: solid;
@@ -60,7 +76,35 @@ a {
     padding: 10vh 0 10vh 0;
 }
 
-@media only screen and (max-width:600px) {}
+@media only screen and (max-width: 768px) {
+
+    .stacks div {
+        padding: 0;
+    }
+
+    .screenshot1 img {
+        max-height: 10rem;
+    }
+
+    .screenshot2 img {
+        max-height: 10rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .stacks div {
+        padding: 0;
+    }
+
+    .screenshot1 img {
+        max-height: 5rem;
+    }
+
+    .screenshot2 img {
+        max-height: 5rem;
+    }
+}
+}
 `
 
 class MdLinks extends React.Component {
@@ -74,7 +118,7 @@ class MdLinks extends React.Component {
                         to tell them apart from working ones.
                     </p>
                 </div>
-                <div className="mockup"></div>
+
                 <div className="description">
                     <Container>
                     <p>
@@ -93,17 +137,27 @@ class MdLinks extends React.Component {
                     </Container>
                 </div>
 
+                <div className="screenshot1">
+                    <p><i>This is how you excecute the library from terminal</i></p>
+                    <img src={MD1} alt="this is how you excecute MDLinks"/>
+                </div>
+
+                <div className="screenshot2">
+                    <p><i>And this is what the library returns</i></p>
+                    <img src={MD2} alt="This is the result with live or dead links"/>
+                </div>
+
                 <div className="stacks">
                     <div>
                         <h2>Stacks</h2>
-                        <p>Javascript</p>
-                        <p>NodeJS</p>
+                        <p>• Javascript</p>
+                        <p>• NodeJS</p>
                     </div>
                 </div>
 
                 <div className="end">
                     <Container>
-                        <p><a target="_blank" href="https://github.com/shareazc/GDL002-md-links">
+                        <p><a target="_blank"  rel="noopener noreferrer" href="https://github.com/shareazc/GDL002-md-links">
                             Check out the GitHub repository.
                         </a></p>
                     </Container>

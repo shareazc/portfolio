@@ -81,7 +81,7 @@ class About extends React.Component {
         <Styles>
           <div className="portrait">
             <div className="self">
-              <img src={self} alt="portrait-picture" />
+              <img src={self} alt="" />
             </div>
           </div>
 
